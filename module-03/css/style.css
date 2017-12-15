@@ -1,0 +1,54 @@
+html {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+.wrapper {
+  background-color: white;
+  width: 480px;
+  margin: auto;
+  padding: 40px;
+  margin-top: 200px;
+  margin-bottom: 400px;
+}
+
+.flight {
+
+}
+
+
+.priciples {
+  padding-top: 20px;
+}
+
+h2,h4 {
+  color: #00008B;
+}
+.under_img {
+  color: #00008B;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    margin:20px;
+}
+
+  .ul_1 {
+    display: inline-block;
+  }
+  .ul_2 {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  hr {
+    border: none; /* Убираем границу */
+    background-color: grey; /* Цвет линии */
+    color: grey; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+/* .wrapper1 {
+  width: 400px;
+  margin: auto;
+  } */
