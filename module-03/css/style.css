@@ -11,11 +11,6 @@ html {
   margin-bottom: 400px;
 }
 
-.flight {
-
-}
-
-
 .priciples {
   padding-top: 20px;
 }
@@ -23,22 +18,23 @@ html {
 h2,h4 {
   color: #00008B;
 }
-.under_img {
-  color: #00008B;
-}
 
-li {
+   .under_img {
+  color: #00008B;
+  }
+
+   li {
     list-style-type: none; /* Убираем маркеры */
     margin:20px;
-}
+    }
 
   .ul_1 {
     display: inline-block;
-  }
+    }
   .ul_2 {
     display: inline-block;
     vertical-align: top;
-  }
+    }
 
   hr {
     border: none; /* Убираем границу */
@@ -47,8 +43,4 @@ li {
     height: 1px; /* Толщина линии */
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-/* .wrapper1 {
-  width: 400px;
-  margin: auto;
-  } */
+    }
