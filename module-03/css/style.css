@@ -2,6 +2,11 @@ html {
     background-image: url(../img/background.jpg);
     background-size: cover;
 }
+
+body {
+  font-family: 'Pathway Gothic One';
+}
+
 .wrapper {
   background-color: white;
   width: 480px;
@@ -12,7 +17,12 @@ html {
 }
 
 .priciples {
-  padding-top: 20px;
+  padding: 20px 0 50px 0;
+  border-bottom: 1px 	#708090;
+}
+
+.offer {
+  padding-top: 40px;
 }
 
 h2,h4 {
@@ -20,27 +30,23 @@ h2,h4 {
 }
 
    .under_img {
-  color: #00008B;
-  }
-
-   li {
-    list-style-type: none; /* Убираем маркеры */
-    margin:20px;
-    }
+     color: #00008B;
+   }
 
   .ul_1 {
     display: inline-block;
-    }
+    width:230px;
+    margin: 0 auto;
+     }
+
   .ul_2 {
+    width:230px;
+    margin: 0 auto;
     display: inline-block;
     vertical-align: top;
     }
 
-  hr {
-    border: none; /* Убираем границу */
-    background-color: grey; /* Цвет линии */
-    color: grey; /* Цвет линии для IE6-7 */
-    height: 1px; /* Толщина линии */
-    margin-top: 60px;
-    margin-bottom: 60px;
-    }
+    li {
+      list-style-type: none; /* Убираем маркеры */
+      padding-top: 10px;
+      }
