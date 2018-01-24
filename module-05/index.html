@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>module_05</title>
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet" >
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="wraper">
+      <header>
+        <ul>
+          <li>
+            <a href="#">
+              <h2>HOME</h2>
+            </a>
+            </li>
+
+            <!-- ABOUT START -->
+
+            <li class="dropdown">
+              <a href="#">
+                <h2>ABOUT</h2>
+              </a>
+              <div class="dropdown-content">
+  <a href="#">AGENCY</a>
+  <a href="#">NEWS</a>
+  <a href="#">TEAM</a>
+</div>
+            </li>
+
+<!-- ABOUT END -->
+
+            <li>
+              <a href="#">
+                <h2>GALLERY</h2>
+              </a>
+            </li>
+            <li>
+              <div class="journey">
+                <a href="#">
+                  <h1>JOURNEY</h1>
+                </a>
+              </div>
+            </li>
+            <li>
+              <a href="#">
+                <h2>TOURS</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h2>BLOG</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h2>CONTACTS</h2>
+              </a>
+            </li>
+        </ul>
+      </header>
+      <div class="main">
+        <div class="bluecircle">
+          <div class="left">
+            <p>&larr;</p>
+          </div>
+          <div class="right">
+            <p>&rarr;</p>
+         </div>
+        </div>
+        <div class="upper">
+          <div class="places">
+            <h2>THERE ARE PLENTY OF PLACES</h2>
+          </div>
+          <div class="worth">
+              <h2>THAT ARE WORTH SEEING</h2>
+          </div>
+        </div>
+        <h2 class="top">TOP DESTINATIONS</h2>
+        <div class="lower">
+          <div class="destination">
+            <div class="venice">
+              <div class="article">
+                <h2>VINICE</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nemo soluta provident facilis atque doloribus nobis, nam dolorum laborum quos officiis. Porro quisquam, at inventore sed aut illo blanditiis obcaecati incidunt suscipit. Tempora illum cupiditate id, ratione saepe, doloribus explicabo?</p>
+                <div class="botton">
+                  <p>Details</p>
+                </div>
+              </div>
+            </div>
+            <div class="freedom">
+            </div>
+            <div class="tower">
+            </div>
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&Hat;</button>
+        <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+      </div>
+    </div>
+
+  </body>
+</html>
