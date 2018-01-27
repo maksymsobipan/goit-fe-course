@@ -1,6 +1,10 @@
 
   body {
-    font-family: Calibri;
+    font-family: 'Pathway Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'), url(https://fonts.gstatic.com/s/pathwaygothicone/v6/Lqv9ztoTUV8Q0FmQZzPqaBRcxZ7No-r1mAtcnpNU5cQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -70,13 +74,16 @@
 }
 
 .dropdown-content {
-  width: 66px;
+  width: 60px;
   padding: 0 8px;
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    border-radius: 2px;
-    text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 2px;
+  text-align: center;
+  left: -10px;
+  vertical-align: top;
+
 }
 
 .dropdown-content::before {
@@ -89,7 +96,7 @@
   border-right: 4px solid transparent;
   position: absolute;
   top: -5px;
-  left: 30px;
+  left: 33px;
 }
 .dropdown-content a {
     color: black;
@@ -97,7 +104,6 @@
     text-decoration: none;
     display: block;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
@@ -128,39 +134,52 @@
 }
 
 .places {
-  width: 300px;
+  margin: 0 0 0 60px;
+  width: 225px;
+  height: 60px;
+  line-height: 60px;
   background-color: #fff;
-  padding-left: 10px;
-  margin-left: 60px;
-  letter-spacing: -1px;
-  list-style:
+  letter-spacing: 1px;
+  border-left: 0.5px solid rgb(219, 219, 219);
+  font-size: 20px;
+  text-align: center;
+
 }
 
 .worth {
-  font-size: 120%;
   color: #fff;
-  width: 320px;
+  width: 276px;
+  height: 60px;
+  line-height: 60px;
   background-color: rgb(19, 208, 241);
-  padding: 0px 10px;
-  margin: 0 60px;
+  letter-spacing: 2px;
+  margin: 0 0 0 60px;
+  font-size: 28px;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .bluecircle {
   width: 90px;
   height: 90px;
   background-color: rgb(19, 208, 241);
-  border-radius: 50%;
+  overflow: visible;
   position: absolute;
   top: 43%;
   right: 834px;
   z-index: 100;
+  border-radius: 50%;
 }
 
 .left, .right {
   display: inline-block;
-  width: 43px;
+  width: 44px;
   height: 90px;
   z-index: 10;
+}
+
+.right {
+  margin-right: -3px;
 }
 
 .left:hover {
@@ -195,11 +214,24 @@ color: rgb(21, 20, 45);
   height: 270px;
 }
 
+
 .freedom {
   background-image: url(../img/freedom.jpg);
+  position: relative;
 }
+
+.freedom:hover .article {
+    display: block;
+}
+
+
 .tower {
   background-image: url(../img/tower.jpg);
+  position: relative;
+}
+
+.tower:hover .article {
+    display: block;
 }
 
 .top {
