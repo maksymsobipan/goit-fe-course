@@ -1,0 +1,340 @@
+
+  body {
+     font-family: 'Pathway Gothic One';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'), url(https://fonts.gstatic.com/s/pathwaygothicone/v6/Lqv9ztoTUV8Q0FmQZzPqaBRcxZ7No-r1mAtcnpNU5cQ.woff2) format('woff2');
+     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+     background-image: url(../img/background.jpg);
+     background-repeat: no-repeat;
+     background-position: top center;
+     background-size: cover;
+   }
+
+   .wrapper {
+     min-height: 100vh;
+   }
+
+   header {
+     width: 64rem;
+     height: 200px;
+     margin: 0 auto;
+   }
+
+   header ul {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+     padding: 0 40px;
+     }
+
+   header a {
+     text-decoration: none;
+     font-size: 20px
+   }
+
+
+   header h2 {
+  color: #fff;
+  font-family: inherit;
+  font-weight: lighter;
+}
+
+   header a h2:hover {
+     color: #2a375a;
+   }
+
+
+   header a h1 {
+     color: rgb(21, 20, 45);
+     font-size: 25px;
+     transform:scaleY(3);
+     font-family: Arial Narrow, sans-serif;
+     font-weight: lighter;
+     letter-spacing: 0.1px;
+     }
+
+   header a h1:hover {
+     color: turquoise;
+   }
+
+   .journey {
+     width: 140px;
+     height: 140px;
+     border-radius: 50%;
+     background-color: rgb(255, 255, 255);
+     text-align: center;
+     vertical-align: middle;
+     display: table-cell;
+     font-stretch: extra-expanded;
+   }
+
+   /*  -----------------ABOUT------------------------*/
+
+
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
+ .dropdown a h2 {
+   margin: 10px auto;
+
+ }
+.dropdown a h2:hover {
+   color: #2a375a;
+}
+
+
+ .dropdown-content {
+   width: 60px;
+   padding: 0 8px;
+   display: none;
+   position: absolute;
+   background-color: #f9f9f9;
+   border-radius: 2px;
+   text-align: center;
+   left: -10px;
+   vertical-align: top;
+ }
+
+ .dropdown-content::before {
+   content: "";
+   display: block;
+   width: 0;
+   height: 0;
+   border-bottom: 6px solid white;
+   border-left: 4px solid transparent;
+   border-right: 4px solid transparent;
+   position: absolute;
+   top: -5px;
+   left: 33px;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 4px 0px;
+     text-decoration: none;
+     display: block;
+ }
+
+ .dropdown-content a:hover {
+   background-color: #f1f1f1
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+ /*-----------------------ABOUT END-------------------------  */
+
+.main {
+  width: 64rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+  padding: 5rem 0 9.25rem 0;
+
+}
+.main h2 {
+  margin: 0 0 20px 60px;
+  text-transform: uppercase;
+  color: #2a375a;
+  font-family: inherit;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  padding: 0 3.125rem;
+  flex-wrap: wrap;
+}
+
+.content >div {
+  width: 31%;
+  height: 155px;
+  margin: 1.25rem 0.625rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.photo:before {
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.photo:hover:before {
+    background: rgba(0,0,0,0.5);
+}
+.photo:after {
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.photo:hover:after {
+    background-image: url(../img/zoom-tool.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.photo:nth-child(1) {
+  background-image: url(../img/fallswatter.jpg);
+}
+.photo:nth-child(2) {
+  background-image: url(../img/church.jpg);
+}
+.photo:nth-child(3) {
+  background-image: url(../img/hotel.jpg);
+}
+.photo:nth-child(4) {
+  background-image: url(../img/rom.jpg);
+}
+.photo:nth-child(5) {
+  background-image: url(../img/icland.jpg);
+}
+.photo:nth-child(6) {
+  background-image: url(../img/ice.jpg);
+}
+.photo:nth-child(7) {
+  background-image: url(../img/moscow.jpg);
+}
+.photo:nth-child(8) {
+  background-image: url(../img/paris.jpg);
+}
+.photo:nth-child(9) {
+  background-image: url(../img/mauntains.jpg);
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 1024px;
+  height: 133px;
+  margin: 0 auto;
+  background-color: rgb(47, 55, 74);
+  color: rgb(255, 255, 255);
+}
+
+.foot {
+  flex-basis: 70%;
+}
+
+footer h4 {
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-weight: lighter;
+    margin: 0 auto;
+}
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 40px 40px 120px;
+}
+
+.foot >div {
+  flex-basis: 33%;
+}
+
+.it a {
+  list-style: none;
+}
+
+
+.contus {
+  width: 30%;
+  align-content: center;
+    padding-top: 20px;
+}
+.contus h3 {
+  font-family: inherit;
+  font-weight: lighter;
+}
+
+#social {
+    position: relative;
+}
+
+#social li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+  }
+
+#social li, #social a {
+  width: 40px;
+  height: 40px;
+    display: block;
+}
+
+#tw {
+    left: 0px;
+    background: url('../img/sprite.jpg') 0 0;
+}
+
+#fb {
+    left: 52px;
+    background: url('../img/sprite.jpg') -38px 0;
+}
+
+#google {
+    left: 104px;
+    background: url('../img/sprite.jpg') -75px 0;
+}
+
+#in {
+      left: 156px;
+      background: url('../img/sprite.jpg') -115px 0;
+}
+
+
+.social_links {
+  width: 220px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.signiture {
+  margin: 0 auto;
+  color: white;
+
+}
+.signiture p {
+  font: caption;
+  display: block;
+  text-align: center;
+
+
+}
+.signiture span {
+  font-size: 17px;
+}
+
+
+#myBtn {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: rgb(19, 208, 241);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
