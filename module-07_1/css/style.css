@@ -39,17 +39,15 @@
      font-size: 20px
    }
 
-
    header h2 {
-  color: #fff;
-  font-family: inherit;
-  font-weight: lighter;
-}
+     color: #fff;
+     font-family: inherit;
+     font-weight: lighter;
+   }
 
    header a h2:hover {
      color: #2a375a;
    }
-
 
    .journey h1 {
      color: rgb(21, 20, 45);
@@ -58,16 +56,12 @@
      font-family: Advent Pro, sans-serif;
      font-weight: lighter;
      letter-spacing: 0.1px;
-
-font-family: 'Arimo', sans-serif;
-
+     font-family: 'Arimo', sans-serif;
      }
 
    header a h1:hover {
      color: turquoise;
    }
-
-
 
    .journey {
      width: 140px;
@@ -77,9 +71,7 @@ font-family: 'Arimo', sans-serif;
      text-align: center;
      vertical-align: middle;
      display: table-cell;
-     /* font-stretch: extra-expanded; */
    }
-
 
    /*  -----------------ABOUT------------------------*/
 
@@ -91,7 +83,7 @@ font-family: 'Arimo', sans-serif;
    margin: 10px auto;
 
  }
-.dropdown a h2:hover {
+ .dropdown a h2:hover {
    color: #2a375a;
 }
 
@@ -138,155 +130,154 @@ font-family: 'Arimo', sans-serif;
  /*-----------------------ABOUT END-------------------------  */
 
 .main {
-  display:block;
-  overflow:auto;
-  width: 56.5rem;
-
+  display:flex;
+  max-width: 1024px;
   background-color: white;
   margin: 0 auto;
-  padding: 0 60px;
+}
+.left {
+  margin: 60px 20px 60px 60px;
+  width: 66%;
+}
+.tours_specials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  width: 48%;
 }
 
-.main > div h2 {
+.item > div {
+  font-family: 'Roboto', sans-serif;
+}
+.item > div:nth-child(1) {
+  width: 133px;
+  height: 114px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.item > div:nth-child(2) {
+  margin: 0.5rem 0;
+}
+
+.img_bongalo {
+  background-image: url(../img/bungalo.jpg);
+}
+.img_china_lake {
+  background-image: url(../img/china_lake.jpg);
+}
+.img_hotel_rock {
+  background-image: url(../img/hotel_rock.jpg);
+}
+.img_hotel {
+  background-image: url(../img/hotel.jpg);
+}
+.img_moscow {
+  background-image: url(../img/moscow.jpg);
+}
+.img_house {
+  background-image: url(../img/house.jpg);
+}
+
+h2 {
+  text-transform: uppercase;
   color: #2a375a;
-  font-family: inherit;
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: lighter;
 }
 
-.upper {
-padding: 80px 0 40px;
-border-bottom: 1px solid grey;
+h4 {
+  margin: 0.2rem 0 1rem;
+  text-transform: uppercase;
+  color: rgb(79, 177, 240);
+  font-weight: lighter;
+  font-size: 16px;
 }
 
-.profile {
-  box-sizing: border-box;
-  display: inline-block;
-  padding-right: 40px;
-  width: 70%;
-  float: left;
+h5 {
+  font-weight: lighter;
+  margin: 0 auto;
+  color: #2a375a;
 }
 
-.flight {
-  float: left;
-  padding: 0 20px 10px 0;
+.content p {
+  margin: 0.8rem 0 0;
+  font-size: 0.6rem;
 }
 
-.principles {
-  box-sizing: border-box;
-  width: 30%;
-  padding-left: 40px;
+button {
+  text-transform: capitalize;
+  border: 1px rgb(157, 149, 145);
+  border-style: solid;
+  border-radius: 3px;
+}
+
+.browse_search {
+  margin: 4rem 0;
+}
+
+.browse {
   display: flex;
   flex-direction: column;
-  counter-reset: section;
+}
+.browse h6 {
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+  font-weight: lighter;
+  margin: 0 0 10px;
+  color: #2a375a;
+}
+.browse button {
+  width: 40%;
+  margin: 40px 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+}
+select {
+    width: 211px;
+    height: 22px;
+    color: rgb(120, 117, 119);
+    border: 2px solid rgb(180, 180, 180);
+    vertical-align: middle;
+    background-color: rgb(245, 245, 245);
+    font-size: 11px;
+}
+option {
+  margin-top: 5px;
+  background-color: rgb(180, 180, 180);
+
+}
+.search {
+  display: flex;
+  flex-direction: column;
 }
 
-.principles h2 {
-  margin: 20px 0 0 -30px;
+.search h2 {
+  margin: 10px 0;
 }
 
-.pills {
-  position: relative;
+.search h6 {
+  font-family: 'Roboto', sans-serif;
+  margin: 1rem 0;
+  font-weight: 100;
+  margin: 16px 0 8px;
 }
 
-.pills::before {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: rgb(57, 185, 213);
-  border-radius: 10px;
-  position: absolute;
-  left: -25px;
-  top: 20px;
-  text-align: center;
-  counter-increment: section;
-  content: counter(section);
+.h6-blue {
+  text-transform: capitalize;
+  color: rgb(79, 177, 240);
 }
-
-.lower {
-  padding: 40px 0;
+.search button {
+  width: 40%;
+  margin: 40px 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 }
-.offer {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 70%;
-  padding-right: 40px;
-  float: left;
-}
-
-.testimonial {
-  display: inline-block;
-  width: 30%;
-  float: left;
-}
-
-.testimonial h2 {
-  padding-left:60px;
-}
-
-.list {
-  padding: 10px 0 0;
-}
-.list ol {
-  column-count: 2;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.list li {
-padding-top: 20px;
-}
-
-.list li::before {
-  content: "\2192";
-  color: blue;
-  padding-right: 10px;
-}
-.quote {
-  box-sizing: border-box;
-  float: right;
-  text-align: left;
-  text-indent: 7px;
-  width: 210px;
-  height: 190px;
-  background: rgb(235, 230, 236);
-  padding: 15px 20px;
-  border: 1px solid grey;
-  border-radius: 2px;
-  position: relative;
-  font-size: 12px;
-  line-height: 20px;
-    }
-    .quote::before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 30px solid grey;
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  position: absolute;
-  top: 188px;
-  left: 90px;
-    }
-    .quote::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border-top: 30px solid rgb(235, 230, 236);
-  border-left: 14px solid transparent;
-  border-right: 14px solid transparent;
-  position: absolute;
-  top: 186px;
-  left: 90px;
-    }
-    .mark-johnson {
-      width: 100%;
-      text-align: center;
-      padding: 30px 20px;
-      float: left;
-    }
-
 footer {
   display: flex;
   flex-direction: row;
@@ -296,11 +287,9 @@ footer {
   background-color: rgb(47, 55, 74);
   color: rgb(255, 255, 255);
 }
-
 .foot {
   flex-basis: 70%;
 }
-
 footer h4 {
   color: rgb(255, 255, 255);
   font-family: inherit;
@@ -312,15 +301,12 @@ footer h4 {
   flex-wrap: wrap;
   padding: 40px 40px 40px 120px;
 }
-
 .foot >div {
   flex-basis: 33%;
 }
-
 .it a {
   list-style: none;
 }
-
 .contus {
   width: 30%;
   align-content: center;
@@ -330,11 +316,9 @@ footer h4 {
   font-family: inherit;
   font-weight: lighter;
 }
-
 #social {
     position: relative;
 }
-
 #social li {
     margin: 0;
     padding: 0;
@@ -343,56 +327,45 @@ footer h4 {
     top: 0;
     border-radius: 50%;
   }
-
 #social li, #social a {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
     display: block;
-
 }
-
 #tw {
     left: 0px;
     background: url('../img/sprite.jpg') 0 0;
 }
-
 #fb {
     left: 52px;
     background: url('../img/sprite.jpg') -38px 0;
 }
-
 #google {
     left: 104px;
     background: url('../img/sprite.jpg') -75px 0;
 }
-
 #in {
       left: 156px;
       background: url('../img/sprite.jpg') -115px 0;
 }
-
 
 .social_links {
   width: 220px;
   height: 60px;
   margin: 0 auto;
 }
-
 .signiture {
   margin: 0 auto;
   color: white;
-
 }
 .signiture p {
   font: caption;
   display: block;
   text-align: center;
 }
-
 .signiture span {
   font-size: 17px;
 }
-
 #myBtn {
   margin: 0;
   width: 30px;
@@ -409,8 +382,6 @@ footer h4 {
   cursor: pointer;
   border-radius: 50%;
 }
-
-
 #myBtn:hover {
     background-color: #555;
 }

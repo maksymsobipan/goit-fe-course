@@ -9,11 +9,14 @@
     <div class="wrapper">
       <div class="services">
         <header>
-          <div class="golgen">
-              <h2>
-                Golden
-              </h2>
-
+          <div class="golden">
+            <a href="#">
+              <div class="golden_a">
+                <h2>
+                  Golden
+                </h2>
+              </div>
+            </a>
           </div>
           <nav>
             <ul>
@@ -35,14 +38,12 @@
             </ul>
           </nav>
         </header>
-
         <div class="divname">
           <h3>services</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur.
           </p>
         </div>
-
         <div class="items">
           <div class="ecommerce">
             <a href="#">
@@ -83,21 +84,21 @@
             Lorem ipsum dolor sit amet, consectetur.
           </p>
         </div>
-        <form action="#">
-          <div class="massage">
-            <div class="form-data">
-              <input type="text" placeholder="YOUR NAME*" required>
-              <input type="email" placeholder="YOUR E-MAIL*" required>
-              <input type="text" placeholder="SUBJECT" required>
+        <div class="form">
+          <form action="#" method="get">
+            <div class="massage">
+              <div class="form-data">
+                <input type="text" name="YOUR NAME*" pattern="[A-Za-z]{3}" placeholder="YOUR NAME*" required>
+                <input type="email" placeholder="YOUR E-MAIL*" required>
+                <input type="text" placeholder="SUBJECT" required>
+              </div>
+              <div class="form-massage">
+                <textarea placeholder="YOUR MESSAGE*"></textarea>
+              </div>
             </div>
-            <div class="form-massage">
-              <textarea placeholder="YOUR MESSAGE*"></textarea>
-            </div>
-          </div>
-          <div class="botton">
-            <button type="submit" name="button">send message</button>
-          </div>
-        </form>
+            <button class="button" type="submit" name="button">send message</button>
+          </form>
+        </div>
       </div>
     </div>
   </body>

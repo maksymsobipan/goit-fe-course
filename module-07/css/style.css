@@ -1,8 +1,7 @@
 @import "fonts.css";
 
    .wrapper {
-     max-width: 87.5rem;
-     min-height: 100vh;
+     min-width: 100vh;
    }
    .services {
      display: flex;
@@ -17,12 +16,17 @@
    h6 {
      font-size: 11px;
    }
-   .golgen {
+   .golden {
+     display: flex;
+     justify-content: center;
      width: 45%;
      text-transform:
    }
+   .golden_a {
+     width: 25%;
+   }
 
-   .golgen h2 {
+   .golden_a h2 {
      color: gold;
      margin: 0 auto;
      text-align: center;
@@ -31,6 +35,15 @@
      font-family: 'Yellowtail';
      text-decoration: none;
    }
+
+   .golden a {
+     text-decoration: none;
+   }
+   .golden_a h2:hover {
+     color: rgb(80, 50, 80);
+   }
+
+
    nav {
      display: flex;
    }
@@ -152,38 +165,51 @@
    .divname_low {
      margin: 4rem auto 1rem;
    }
+
+   .form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
    form {
      display: flex;
      flex-direction: column;
-     align-items: center;
    }
+
    .massage {
      display: flex;
      justify-content: center;
+     width: 100%;
+
    }
    .form-data {
      display: flex;
+     width: 45%;
      flex-direction: column;
    }
-   input {
+
+   .form-data input {
     margin: 1rem;
-    width: 26rem;
+    width: 80%;
     height: 1.25rem;
     padding: 1rem;
     font-family: 'Roboto', sans-serif;
     font-size: 0.725rem;
     font-weight: 800;
     color: rgb(142, 142, 142);
-    color: white;
     border: 1px solid rgb(0, 0, 0);
     vertical-align: middle;
     border-radius: 3px;
     background-color: #fff;
   }
 
+  .form-massage {
+    width: 45%;
+  }
+
   .form-massage textarea {
   margin: 1rem;
-  width: 26rem;
+  width: 100%;
   height: 74%;
   padding: 1rem;
   font-size: 0.725rem;
@@ -191,15 +217,17 @@
   color: rgb(142, 142, 142);
   border-radius: 3px;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  resize: none;
 }
 
-button {
+.button {
   font-size: 0.625rem;
   text-transform: uppercase;
   color: #fff;
   background-color: rgb(241, 200, 23);
   margin: 1rem auto 5rem;
-  width: 15rem;
+  width: 25%;
   height: 4rem;
   padding: 1rem;
   font-family: 'Roboto', sans-serif;
