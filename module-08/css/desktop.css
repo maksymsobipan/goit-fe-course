@@ -1,0 +1,14 @@
+
+
+@media (min-width: 1024px) {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+
+  }
+  .items > div {
+    flex-basis: 20%;
+  }
+}
