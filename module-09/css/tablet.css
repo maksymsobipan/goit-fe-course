@@ -32,17 +32,6 @@
     padding-top: 1.5rem;
     flex-basis: 20%
     }
-
-  /* .items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-around;
-    }
-  .items > div {
-    flex-basis: 40%;
-    } */
-
     .main {
       margin: auto;
     }
