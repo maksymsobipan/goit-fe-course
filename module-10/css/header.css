@@ -1,0 +1,75 @@
+
+.header {
+  margin: 1rem 0;
+}
+.header__pre-title {
+  text-transform: capitalize;
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header__button {
+  text-transform: uppercase;
+}
+
+.header__logo-link {
+  text-decoration: none;
+  color: #95e1d3;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header__list-item {
+  margin: 0.5rem auto 0.1rem;
+}
+
+.header__list-item:hover {
+  color: #f38181;
+  border-bottom: solid 2px #f38181;
+  margin-bottom: -2px;
+}
+
+.header__item-link {
+  color: #95e1d3;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.header__logo-link--hover:hover,
+.header__item-link--hover:hover {
+  color: #f38181;
+
+  text-decoration: none;
+}
+.header__logo-link--hover:hover {
+  text-decoration: none;
+}
+
+.header__list .header__list-item--one:hover ~ .header__list-item--two {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.header__list .header__list-item--two:hover ~ .header__list-item--three {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.header__list .header__list-item--three:hover ~ .header__list-item--four {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.header__list .header__list-item--four:hover ~ .header__list-item--five {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+.header__list .header__list-item--five:hover ~ .header__list-item--four {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
