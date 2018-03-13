@@ -1,0 +1,373 @@
+@import "base.css";
+$primary-yellow-color: #fce38a;
+$primary-red-color: #f38181;
+$primary-green-color: #95e1d3;
+
+@mixin content-text {
+  font-size: 0.65rem;
+  opacity: 0.9;
+}
+@mixin main-titles-font-settings {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+
+@mixin titles-font-settings {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+}
+
+.title-main {
+  @include main-titles-font-settings();
+}
+
+.header-icon {
+  fill: #fff;
+  width: 1.0rem;
+  height: 1.0rem;
+  background: transparent;
+  &:hover {
+    fill: $primary-yellow-color;
+  }
+}
+.header__item-zoom:hover {
+  text-decoration: none;
+}
+
+.header__list-item--cart a:hover {
+  text-decoration: none;
+}
+.header {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-image: url(../img/eagle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #f2e291, #ea8a89);
+    opacity: .8;
+  }
+}
+@media (min-width: 768px){
+  .header__wrapper {
+    padding: 0 10rem;
+  }
+}
+.header__title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 9rem;
+}
+.header__pre-title {
+  @include titles-font-settings();
+  font-weight: 400;
+  font-size: 4rem;
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.title-start {
+  @include titles-font-settings();
+}
+
+.header__main-title {
+  font-size: 7rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  @media (max-width: 768px) {
+    font-size: 4rem;
+  }
+  @media (max-width: 1024px) {
+    font-size: 6rem;
+  }
+}
+
+.header__button {
+  text-transform: uppercase;
+}
+
+.header__logo {
+  text-align: center;
+  &-link {
+    color: #fff;
+    &:hover {
+      color: $primary-yellow-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.header__button {
+  text-transform: uppercase;
+}
+
+
+.header__list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+ &-item {
+   margin: 0.5rem auto 0.1rem;
+   &:hover {
+     color: $primary-yellow-color;
+     border-bottom: solid 2px $primary-yellow-color;
+     margin-bottom: -2px;
+   }
+  }
+}
+.cart:hover,
+.zoom:hover {
+  border-bottom: transparent;
+}
+
+.header__item-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold;
+  &:hover {
+    color: $primary-yellow-color;
+    text-decoration: none;
+  }
+}
+
+.header__list .header__list-item--one:hover ~ .header__list-item--two,
+.header__list .header__list-item--two:hover ~ .header__list-item--three,
+.header__list .header__list-item--three:hover ~ .header__list-item--four,
+.header__list .header__list-item--four:hover ~ .header__list-item--five {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.header__button {
+  margin: 6.25rem 0 10rem;
+  padding: 0.5rem 2.0rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: solid 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  margin: 3rem 0;
+}
+
+.icon {
+  fill: $primary-green-color;
+  width: 2.0rem;
+  height: 2.0rem;
+  background: transparent;
+  &:hover {
+    fill: $primary-red-color;
+  }
+}
+.item__content {
+  margin-left: 1.5rem;
+}
+.item__title a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.item__content-text {
+  @include content-text();
+}
+
+.red-line {
+  margin: 0 auto;
+  width: 60px;
+  height: 0;
+  border: solid 1px $primary-red-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer__title {
+  margin-top: 3rem;
+}
+.footer__text {
+  @include content-text();
+  margin: 2rem 2rem 0 6rem;
+  text-align: center;
+}
+.title {
+  text-align: center;
+  }
+.person {
+  margin: 3rem auto;
+  position: relative;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  }
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.person:before {
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.person:hover:before {
+    background: -webkit-gradient(linear, left bottom, left top, from(#f2e291), to(#ea8a89));
+    background: -webkit-linear-gradient(bottom, #f2e291, #ea8a89);
+    background: -o-linear-gradient(bottom, #f2e291, #ea8a89);
+    background: linear-gradient(to top, #f2e291, #ea8a89);
+    -webkit-box-shadow: 10px 10px #95e1d3;
+            box-shadow: 10px 10px #95e1d3;
+    opacity: 0.8;
+}
+.link {
+  padding: 0.9rem;
+  fill: $primary-red-color;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: $primary-yellow-color;
+  &:hover {
+    fill: #fff;
+    background-color: $primary-red-color;
+  }
+}
+.social {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+
+.facebook {
+  left: 4.0rem;
+  top: 45%;
+}
+.twitter {
+  left: 7.5rem;
+  top: 45%;
+}
+
+.pinterest {
+  left: 11.0rem;
+  top: 45%;
+}
+
+.instagram {
+  left: 14.5rem;
+  top: 45%;
+}
+.person:hover .social {
+    display: block;
+}
+.person__name {
+  text-transform: uppercase;
+}
+
+.person__position {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+.underfoot {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5;
+}
+.underfoot-form {
+  font-size: 0.8rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+.underfoot-input {
+  padding: 0.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+  border-top: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: transparent;
+  border-bottom: 1px solid #e5e5e5;
+}
+.subscribe {
+  background-color: $primary-green-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 2rem;
+  border: transparent;
+}
+.signiture {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.red-sign {
+  color: $primary-red-color;
+}

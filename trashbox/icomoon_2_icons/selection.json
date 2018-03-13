@@ -1,0 +1,91 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M1024 943l-302.31-302.31c50.181-66.966 80.294-149.78 80.294-239.698 0-221.118-179.874-400.992-400.992-400.992s-400.992 179.874-400.992 400.992 179.874 400.992 400.992 400.992c89.918 0 172.732-30.113 239.698-80.294l302.31 302.31 81-81zM38.19 400.992c0-200.057 162.745-362.802 362.802-362.802s362.802 162.745 362.802 362.802-162.745 362.802-362.802 362.802-362.802-162.745-362.802-362.802z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "search"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 3,
+        "id": 1,
+        "name": "search",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M896 838.4v-70.4h-601.6l38.4-70.4 588.8-57.6 102.4-384h-787.2l-44.8-192h-192v64h140.8l134.4 537.6-83.2 166.4v96c0 51.2 44.8 96 96 96s96-44.8 96-96-44.8-96-96-96h480v96c0 51.2 44.8 96 96 96s96-44.8 96-96c0-44.8-25.6-76.8-64-89.6zM256 320h684.8l-70.4 256-537.6 57.6-76.8-313.6z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "shopping-cart"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "shopping-cart",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 1
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showCodes": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {},
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      }
+    },
+    "imagePref": {
+      "prefix": "icon-zoom-cart",
+      "png": false,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon-social",
+      "height": 32,
+      "columns": 16,
+      "margin": 16,
+      "minifyJs": false
+    },
+    "historySize": 50
+  }
+}

@@ -1,0 +1,40 @@
+.underfoot {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5; }
+
+.underfoot-form {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.underfoot-input {
+  padding: 0.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+  border-top: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: transparent;
+  border-bottom: 1px solid #e5e5e5; }
+
+.subscribe {
+  background-color: #95e1d3;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 2rem;
+  border: transparent; }
+
+.signiture {
+  font-size: 0.8rem;
+  font-weight: 700; }
+
+.red-sign {
+  color: #f38181; }
