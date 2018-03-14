@@ -96,10 +96,6 @@ $primary-green-color: #95e1d3;
   }
 }
 
-.header__button {
-  text-transform: uppercase;
-}
-
 .header__logo {
   text-align: center;
   &-link {
@@ -110,11 +106,6 @@ $primary-green-color: #95e1d3;
     }
   }
 }
-
-.header__button {
-  text-transform: uppercase;
-}
-
 
 .header__list {
   display: flex;
@@ -145,15 +136,9 @@ $primary-green-color: #95e1d3;
   }
 }
 
-.header__list .header__list-item--one:hover ~ .header__list-item--two,
-.header__list .header__list-item--two:hover ~ .header__list-item--three,
-.header__list .header__list-item--three:hover ~ .header__list-item--four,
-.header__list .header__list-item--four:hover ~ .header__list-item--five {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}
-
 .header__button {
+  cursor: pointer;
+  text-transform: uppercase;
   margin: 6.25rem 0 10rem;
   padding: 0.5rem 2.0rem;
   font-weight: bold;
@@ -363,10 +348,11 @@ img {
   color: #fff;
   padding: 0 2rem;
   border: transparent;
+  cursor: pointer;
 }
 .signiture {
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .red-sign {
   color: $primary-red-color;

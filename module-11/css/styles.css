@@ -1,5 +1,291 @@
 @import url(base.css);
-@import "header.css";
-@import "content.css";
-@import "footer.css";
-@import "underfooter.css";
+.title-main {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.header-icon {
+  fill: #fff;
+  width: 1.0rem;
+  height: 1.0rem;
+  background: transparent; }
+  .header-icon:hover {
+    fill: #fce38a; }
+
+.header__item-zoom:hover {
+  text-decoration: none; }
+
+.header__list-item--cart a:hover {
+  text-decoration: none; }
+
+.header {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  background-image: url(../img/eagle.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover; }
+  .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f2e291), to(#ea8a89));
+    background-image: -webkit-linear-gradient(bottom, #f2e291, #ea8a89);
+    background-image: -o-linear-gradient(bottom, #f2e291, #ea8a89);
+    background-image: linear-gradient(to top, #f2e291, #ea8a89);
+    opacity: .8; }
+
+@media (min-width: 768px) {
+  .header__wrapper {
+    padding: 0 10rem; } }
+
+.header__title {
+  text-align: center;
+  color: white;
+  margin-top: 9rem; }
+
+.header__pre-title {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem; }
+  @media (max-width: 768px) {
+    .header__pre-title {
+      font-size: 2rem; } }
+
+.title-start {
+  font-family: 'Kaushan Script';
+  font-style: normal; }
+
+.header__main-title {
+  font-size: 7rem;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .header__main-title {
+      font-size: 4rem; } }
+  @media (max-width: 1024px) {
+    .header__main-title {
+      font-size: 6rem; } }
+
+.header__logo {
+  text-align: center; }
+  .header__logo-link {
+    color: #fff; }
+    .header__logo-link:hover {
+      color: #fce38a;
+      text-decoration: none; }
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+  .header__list-item {
+    margin: 0.5rem auto 0.1rem; }
+    .header__list-item:hover {
+      color: #fce38a;
+      border-bottom: solid 2px #fce38a;
+      margin-bottom: -2px; }
+
+.cart:hover,
+.zoom:hover {
+  border-bottom: transparent; }
+
+.header__item-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: bold; }
+  .header__item-link:hover {
+    color: #fce38a;
+    text-decoration: none; }
+
+.header__button {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 6.25rem 0 10rem;
+  padding: 0.5rem 2.0rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: transparent;
+  border: solid 2px #fff; }
+
+.items-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;
+  margin: 3rem 0; }
+
+.icon {
+  fill: #95e1d3;
+  width: 2.0rem;
+  height: 2.0rem;
+  background: transparent; }
+  .icon:hover {
+    fill: #f38181; }
+
+.item__content {
+  margin-left: 1.5rem; }
+
+.item__title a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase; }
+
+.item__content-text {
+  font-size: 0.65rem;
+  opacity: 0.9; }
+
+.red-line {
+  margin: 0 auto;
+  width: 60px;
+  height: 0;
+  border: solid 1px #f38181; }
+
+.footer__title {
+  margin-top: 3rem; }
+
+.footer__text {
+  font-size: 0.65rem;
+  opacity: 0.9;
+  margin: 2rem 2rem 0 6rem;
+  text-align: center; }
+
+.title {
+  text-align: center; }
+
+.person {
+  margin: 3rem auto;
+  position: relative;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+.person:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.person:hover:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f2e291), to(#ea8a89));
+  background: -webkit-linear-gradient(bottom, #f2e291, #ea8a89);
+  background: -o-linear-gradient(bottom, #f2e291, #ea8a89);
+  background: linear-gradient(to top, #f2e291, #ea8a89);
+  -webkit-box-shadow: 10px 10px #95e1d3;
+  box-shadow: 10px 10px #95e1d3;
+  opacity: 0.8; }
+
+.link {
+  padding: 0.9rem;
+  fill: #f38181;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #fce38a; }
+  .link:hover {
+    fill: #fff;
+    background-color: #f38181; }
+
+.social {
+  cursor: pointer;
+  display: none;
+  position: absolute; }
+
+.facebook {
+  left: 4.0rem;
+  top: 45%; }
+
+.twitter {
+  left: 7.5rem;
+  top: 45%; }
+
+.pinterest {
+  left: 11.0rem;
+  top: 45%; }
+
+.instagram {
+  left: 14.5rem;
+  top: 45%; }
+
+.person:hover .social {
+  display: block; }
+
+.person__name {
+  text-transform: uppercase; }
+
+.person__position {
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 0.8rem;
+  opacity: 0.5; }
+
+.underfoot {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e5e5; }
+
+.underfoot-form {
+  font-size: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.underfoot-input {
+  padding: 0.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  opacity: 0.8;
+  border-top: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+  border-right: transparent;
+  border-bottom: 1px solid #e5e5e5; }
+
+.subscribe {
+  background-color: #95e1d3;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 2rem;
+  border: transparent;
+  cursor: pointer; }
+
+.signiture {
+  font-size: 0.8rem;
+  font-weight: 400; }
+
+.red-sign {
+  color: #f38181; }

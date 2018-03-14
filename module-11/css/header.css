@@ -75,9 +75,6 @@
     .header__main-title {
       font-size: 6rem; } }
 
-.header__button {
-  text-transform: uppercase; }
-
 .header__logo {
   text-align: center; }
   .header__logo-link {
@@ -85,9 +82,6 @@
     .header__logo-link:hover {
       color: #fce38a;
       text-decoration: none; }
-
-.header__button {
-  text-transform: uppercase; }
 
 .header__list {
   display: -webkit-box;
@@ -117,17 +111,12 @@
     color: #fce38a;
     text-decoration: none; }
 
-.header__list .header__list-item--one:hover ~ .header__list-item--two,
-.header__list .header__list-item--two:hover ~ .header__list-item--three,
-.header__list .header__list-item--three:hover ~ .header__list-item--four,
-.header__list .header__list-item--four:hover ~ .header__list-item--five {
-  margin-top: 1rem;
-  margin-bottom: -1rem; }
-
-.header__button {
-  margin: 6.25rem 0 10rem;
-  padding: 0.5rem 2.0rem;
-  font-weight: bold;
-  color: #fff;
-  background-color: transparent;
-  border: solid 2px #fff; }
+  .header__button {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 6.25rem 0 10rem;
+    padding: 0.5rem 2.0rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: solid 2px #fff; }

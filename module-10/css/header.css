@@ -52,24 +52,3 @@
 .header__logo-link--hover:hover {
   text-decoration: none;
 }
-
-.header__list .header__list-item--one:hover ~ .header__list-item--two {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}
-.header__list .header__list-item--two:hover ~ .header__list-item--three {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}
-.header__list .header__list-item--three:hover ~ .header__list-item--four {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}
-.header__list .header__list-item--four:hover ~ .header__list-item--five {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}
-.header__list .header__list-item--five:hover ~ .header__list-item--four {
-  margin-top: 1rem;
-  margin-bottom: -1rem;
-}

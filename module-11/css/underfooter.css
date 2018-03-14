@@ -24,13 +24,14 @@
   border-right: transparent;
   border-bottom: 1px solid #e5e5e5; }
 
-.subscribe {
-  background-color: #95e1d3;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  padding: 0 2rem;
-  border: transparent; }
+  .subscribe {
+    background-color: #95e1d3;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 2rem;
+    border: transparent;
+    cursor: pointer; }
 
 .signiture {
   font-size: 0.8rem;
